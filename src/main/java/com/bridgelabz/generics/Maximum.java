@@ -5,10 +5,10 @@ import java.util.*;
 public class Maximum 
 {
 	public static void maxInt() {
-		Integer numOne = 900;
-		Integer numTwo = 600;
-		Integer numThree= 990;
-		int max = 0;
+		Float numOne = 100f;
+		Float numTwo = 990.1f;
+		Float numThree= 990.12f;
+		Float max = 0f;
 		
 		if(numOne.compareTo(numTwo) > 0 && numOne.compareTo(numThree) > 0) {
 			max = numOne;
