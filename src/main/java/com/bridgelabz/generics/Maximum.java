@@ -5,22 +5,22 @@ import java.util.*;
 public class Maximum 
 {
 	public static void maxInt() {
-		Float numOne = 100f;
-		Float numTwo = 990.1f;
-		Float numThree= 990.12f;
-		Float max = 0f;
+		String stringOne = "Apple";
+		String stringTwo = "Peach";
+		String stringThree= "Banana";
+		String max = null;
 		
-		if(numOne.compareTo(numTwo) > 0 && numOne.compareTo(numThree) > 0) {
-			max = numOne;
+		if(stringOne.compareTo(stringTwo) > 0 && stringOne.compareTo(stringThree) > 0) {
+			max = stringOne;
 		}
-		else if (numTwo.compareTo(numOne) > 0 && numTwo.compareTo(numThree) > 0) {
-		    max = numTwo;
+		else if (stringTwo.compareTo(stringOne) > 0 && stringTwo.compareTo(stringThree) > 0) {
+		    max = stringTwo;
 		}
-		else if(numThree.compareTo(numOne) > 0 && numThree.compareTo(numTwo) > 0) {
-			max = numThree;
+		else if(stringThree.compareTo(stringOne) > 0 && stringThree.compareTo(stringTwo) > 0) {
+			max = stringThree;
 		}
 		else {}
-		System.out.print("The maximum number:"+max);
+		System.out.print("The maximum in strings is : "+max);
 	}
 	
     public static void main( String[] args )
