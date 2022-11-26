@@ -4,6 +4,9 @@ import java.util.*;
 
 public class Maximum
 {
+	
+	
+	
 	public static <E extends Comparable <E>> E max(E one, E two, E three, E four) {
 	
 		E max = null;
@@ -23,11 +26,9 @@ public class Maximum
 		else {}
 		return max;
 	}
-	
-    public static void main( String[] args )
-    {
-    
-    	Scanner scan = new Scanner(System.in);
+	public static void printMax() {
+		
+		Scanner scan = new Scanner(System.in);
     	System.out.print("Enert 1 to compare string, "
     			+ "\nEnter 2 to compare floats, "+"\nEnter 3 to compare integers:");
     	int check = scan.nextInt();
@@ -43,6 +44,12 @@ public class Maximum
     	else {
     		System.out.print("The mamimum from 15,19,17 and 18 is: "+max(15,19,17,18));
     	}
-    
+		
+	}
+	
+    public static void main( String[] args )
+    {
+    	printMax();
+             
     }
 }
