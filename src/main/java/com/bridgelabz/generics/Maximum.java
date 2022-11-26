@@ -4,27 +4,32 @@ import java.util.*;
 
 public class Maximum 
 {
-	public static void maxInt() {
-		String stringOne = "Apple";
-		String stringTwo = "Peach";
-		String stringThree= "Banana";
-		String max = null;
+	public static <E extends Comparable <E>> E max(E one, E two, E three) {
+	
+		E max = null;
 		
-		if(stringOne.compareTo(stringTwo) > 0 && stringOne.compareTo(stringThree) > 0) {
-			max = stringOne;
+		if(one.compareTo(two) > 0 && one.compareTo(three) > 0) {
+			max = one;
 		}
-		else if (stringTwo.compareTo(stringOne) > 0 && stringTwo.compareTo(stringThree) > 0) {
-		    max = stringTwo;
+		else if (two.compareTo(one) > 0 && two.compareTo(three) > 0) {
+		    max = two;
 		}
-		else if(stringThree.compareTo(stringOne) > 0 && stringThree.compareTo(stringTwo) > 0) {
-			max = stringThree;
+		else if(three.compareTo(one) > 0 && three.compareTo(two) > 0) {
+			max = three;
 		}
 		else {}
-		System.out.print("The maximum in strings is : "+max);
+		return max;
 	}
 	
     public static void main( String[] args )
     {
-        maxInt();
+    	//compare integers
+    	System.out.println("The max of 10,15 and 60 is: "+max(10,15,60));
+    	
+    	//compare floats
+    	System.out.println("The max of 10.11,15.45 and 15.99 is: "+max(10.11f,15.45f,15.99f));
+    	
+    	//compare strings
+    	System.out.println("The max of 10,15 and 60 is: "+max("Ram","Shyam","Kunwar"));
     }
 }
